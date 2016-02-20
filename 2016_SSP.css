@@ -1,0 +1,65 @@
+.story-box{
+	height: 300px;
+	min-width: 25%;
+	max-width: 25%;
+	float: left;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	opacity: 0.6;
+	font-family: 'Arvo', serif;
+    text-shadow: 0px 0px 10px black;
+    text-align: center;
+    padding-top: 170px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.1;
+    -webkit-transition: opacity 1s, color 1s, font-size 0.5s;
+	transition: opacity 1s, color 1s, font-size 1s;
+}
+
+.story-box:hover{
+	opacity: 1;
+	color: white;
+	font-size: 35px;
+}
+
+#panel-holder{
+	height:600px;
+}
+
+#banner{
+	background: url('image/banner.jpg'); 
+	background-size: cover; 
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	background-position: 50% 10%;
+}
+
+#banner-wrapper{
+	height: 100vh;
+	max-height: 100vh;
+}
+
+.top {
+    position: absolute;
+    z-index: 2;
+    top: 1%;
+    left: 50%;
+    transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+}
+
+@media screen and (max-width: 801px) {
+	.story-box {
+		min-width: 50%;
+		max-width: 50%;
+		font-size: 25px;
+	}
+	.story-box:hover {
+		font-size: 30px;
+	}
+}
